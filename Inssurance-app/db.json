@@ -1,0 +1,66 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "user@example.com",
+      "password": "password123",
+      "name": "John Doe"
+    },
+    {
+      "id": "3586",
+      "name": "Ujjwal Shukla",
+      "email": "shuklaujjwal6260@gmail.com",
+      "password": "Shukla@6260"
+    },
+    {
+      "id": "b2b9",
+      "name": "Rajeev Sharma",
+      "email": "Shukla@7890",
+      "password": "Ujjwal9098"
+    }
+  ],
+  "policies": [
+    {
+      "id": "1",
+      "name": "Health Insurance",
+      "coverage": "Comprehensive",
+      "description": "Health Insurance",
+      "price": 300
+    },
+    {
+      "id": "2",
+      "name": "Car Insurance",
+      "coverage": "Full Coverage",
+      "description": "Car Insurance",
+      "price": 500
+    },
+    {
+      "id": "3",
+      "name": "Home Insurance",
+      "coverage": "Basic",
+      "description": "Home Insurance",
+      "price": 200
+    },
+    {
+      "id": "4",
+      "name": "Travel Insurance",
+      "coverage": "Comprehensive",
+      "description": "Travel Insurance",
+      "price": 100
+    },
+    {
+      "id": "5",
+      "name": "Life Insurance",
+      "coverage": "Full Coverage",
+      "description": "Life Insurance",
+      "price": 400
+    },
+    {
+      "id": "6",
+      "name": "Pet Insurance",
+      "coverage": "Basic",
+      "description": "Pet Insurance",
+      "price": 150
+    }
+  ]
+}
