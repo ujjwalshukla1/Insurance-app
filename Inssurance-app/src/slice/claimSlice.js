@@ -8,8 +8,11 @@ const claimSlice = createSlice({
     addClaim: (state, action) => {
       state.push(action.payload);
     },
+    removeClaim: (state, action) => {
+      return state.filter((claim) => claim.id !== action.payload);
+    },
   },
 });
 
-export const { setClaims, addClaim } = claimSlice.actions;
+export const { setClaims, addClaim, removeClaim } = claimSlice.actions;
 export default claimSlice.reducer;
