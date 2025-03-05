@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { addClaim } from "../slice/claimSlice.js";
-import { fetchPolicies } from "../slice/PolicySlice.js";
+import { fetchPolicies } from "../slice/policySlice.js";
 import { toast } from "react-toastify";
 
 
@@ -15,7 +15,12 @@ const Policies = () => {
     dispatch(fetchPolicies());
   }, [dispatch]);
 
-  const handleClaim = (policy) => {
+  const handlePurchase = (policy) => {
+    window.confirm("Are you sure you want to purchase this policy?");
+    if (!user) {
+      toast.error("Please login to purchase a policy.");
+      return;
+    }
     if (user) {
       const newClaim = {
         id: Date.now(),
@@ -25,7 +30,7 @@ const Policies = () => {
         status: "Pending",
       };
       dispatch(addClaim(newClaim));
-      toast.success("Claim filed successfully.");
+      toast.success("Policy purchased successfully.");
     }
   };
 
@@ -43,10 +48,10 @@ const Policies = () => {
             </Link>
             {user && (
               <button
-                onClick={() => handleClaim(policy)}
+                onClick={() => handlePurchase(policy)}
                 className="ml-4 bg-green-500 px-3 py-2 rounded mt-2 text-white"
               >
-                File a Claim
+                Purchase Policy
               </button>
             )}
           </div>

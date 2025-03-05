@@ -9,10 +9,10 @@ import Home from "./pages/Home.jsx";
 import Policies from "./pages/Policies.jsx";
 import UserProfile from "./pages/UserProfile.jsx";
 import Login from "./pages/Login.jsx";
-import Claims from "./pages/Claims.jsx";
 import "tailwindcss/tailwind.css";
 import Register from "./pages/Register.jsx";
 import PolicyDetail from "./pages/PolicyDetail.jsx";
+import Purchase from "./pages/Purchase.jsx";
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/policies" element={<Policies />} />
               <Route path="/profile" element={<UserProfile />} />
-              <Route path="/claims" element={<Claims />} />
+              <Route path="/claims" element={<Purchase />} />
               <Route path="/login" element={<Login />} />
               <Route path="/policies/:id" element={<PolicyDetail />} />
               <Route path="/register" element={<Register />} />

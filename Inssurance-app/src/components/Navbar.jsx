@@ -21,7 +21,7 @@ const Navbar = () => {
           <Link to="/policies" className="p-2">
             Policies
           </Link>
-          <Link to="/claims" className="p-2">Claims</Link>
+          <Link to="/claims" className="p-2">Puchase</Link>
           <Link to="/profile" className="p-2">Profile</Link>
           {user ? (
             <button
